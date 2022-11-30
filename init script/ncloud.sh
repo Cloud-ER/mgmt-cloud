@@ -6,7 +6,7 @@ useradd clouder
 echo 'clouder' | passwd --stdin clouder
 
 cp -a /etc/sudoers /etc/sudoers.bak
-echo "iteyes  ALL=(ALL)       NOPASSWD: ALL" >> /etc/sudoers
+echo "clouder  ALL=(ALL)       NOPASSWD: ALL" >> /etc/sudoers
 
 mkdir -p /root/script_bak
 cp -a /etc/yum.conf /root/script_bak/yum.conf.bak
