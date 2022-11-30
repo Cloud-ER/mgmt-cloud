@@ -6,7 +6,7 @@ useradd clouder
 echo 'clouder' | passwd --stdin clouder
 
 cp -a /etc/sudoers /etc/sudoers.bak 
-echo "eunsun  ALL=(ALL)       NOPASSWD: ALL" >> /etc/sudoers 
+echo "clouder  ALL=(ALL)       NOPASSWD: ALL" >> /etc/sudoers 
 
 setenforce 0
 sed -i "s/SELINUX=enforcing/SELINUX=disabled/g" /etc/selinux/config 
